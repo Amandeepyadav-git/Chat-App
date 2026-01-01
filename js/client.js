@@ -25,7 +25,7 @@ const userName = prompt("Enter your name to join : ");
 socket.emit("new-user-joined", userName);
 
 socket.on("user-joined", (name) => {
-  append(`${name} joined the chat`, "right");
+  append(`${name} joined the chat`, "left");
   socket.emit("send", message);
   console.log(messageInput);
   messageInput.innerHTML = " ";
@@ -33,5 +33,5 @@ socket.on("user-joined", (name) => {
 });
 
 socket.on("receive", (data) => {
-  append(`${data.name}-> ${data.message}`, "left");
+  append(`${data.name}-> ${data.message}`, "right");
 });
