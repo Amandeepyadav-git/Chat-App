@@ -4,6 +4,7 @@ const io = require('socket.io')(8000, {
     cors: {
         origin: "*",
         methods: ["GET", "POST"]
+        // it's just a random comment for my regular post 
     }
 })
 
