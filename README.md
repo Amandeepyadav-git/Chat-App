@@ -2,7 +2,7 @@
 
 **Reminder-Keep-in-mind*
 
-**This project is still under developmen*
+**This project is still under development*
 
 
 A real-time chat application built with JavaScript, CSS, and HTML.
