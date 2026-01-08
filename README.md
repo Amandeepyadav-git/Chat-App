@@ -24,7 +24,10 @@ A real-time chat application built with JavaScript, CSS, and HTML.
 - `ting.mp3` - [Notification sound?]
 
 ## Installation
--  
+-  node js 
+- nodemon 
+- socket-io
+- commonjs
 
 ## Usage
 [Explain how to use the chat application]
