@@ -1,3 +1,6 @@
+#Reminder
+**This project is still under developmen**
+
 # Chat-App
 
 A real-time chat application built with JavaScript, CSS, and HTML.
