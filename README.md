@@ -2,7 +2,7 @@
 
 **Reminder-Keep-in-mind*
 
-**This project is still under development*
+**This project is still under development , from - CodeWithHarry - Youtube*
 
 
 A real-time chat application built with JavaScript, CSS, and HTML.
