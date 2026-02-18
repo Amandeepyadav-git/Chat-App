@@ -10,7 +10,7 @@ const append = (message, position) => {
    position = position;
   messageElement.innerText = message;
   messageElement.classList.add("message");
-  messageElement.classList.add("position");
+  messageElement.classList.add(position);
   messageContainer.append(messageElement);
 };
 
@@ -25,7 +25,7 @@ const userName = prompt("Enter your name to join : ");
 socket.emit("new-user-joined", userName);
 
 socket.on("user-joined", (name) => {
-  append(`${name} joined the chat`, "left");
+  append(`${name} joined the chat`, "right");
   socket.emit("send", message);
   console.log(messageInput);
   messageInput.innerHTML = " ";
@@ -33,5 +33,5 @@ socket.on("user-joined", (name) => {
 });
 
 socket.on("receive", (data) => {
-  append(`${data.name}-> ${data.message}`, "right");
+  append(`${data.name}: ${data.message}`, "left");
 });
