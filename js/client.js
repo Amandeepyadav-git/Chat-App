@@ -1,4 +1,5 @@
 const socket = io("http://localhost:8000");
+//https://chatapp-kappa-wine.vercel.app/?messageInp=jey#
 
 const form = document.getElementById("send-container");
 
